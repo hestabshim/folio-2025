@@ -1,7 +1,7 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+// import Image from "next/image";
+// import styles from "./page.module.css";
 import Spline from "@splinetool/react-spline/next";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 export default function Home() {
   return (
