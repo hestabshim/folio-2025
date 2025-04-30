@@ -1,11 +1,10 @@
-import PropTypes from "prop-types";
 import styles from "../styles/roulette.module.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 function Roulette() {
   const [text, setText] = useState("is a aspiring UX engineer.");
 
   const Generate = () => {
-    let r_text = [
+    const r_text = [
       "likes honeycrisp apples.",
       "enjoys 25% sugar in her boba.",
       "creates digital collages in Photoshop.",
@@ -21,7 +20,7 @@ function Roulette() {
       "enjoys maximalist design.",
     ];
 
-    var i = Math.floor(r_text.length * Math.random());
+    const i = Math.floor(r_text.length * Math.random());
     setText(r_text[i]);
   };
 
