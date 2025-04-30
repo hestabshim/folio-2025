@@ -13,6 +13,7 @@ export default function Home() {
       <Card>
         <Roulette />
       </Card>
+      <div className="overlay"></div>
       <canvas className="whiteboard"></canvas>
     </>
   );

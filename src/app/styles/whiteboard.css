@@ -9,8 +9,56 @@
   background-image: url("../images/04.jpg");
   filter: contrast(500%) brightness(400%);
 }
+
 html,
 body {
   margin: 0px;
   height: 100%;
 }
+.overlay{
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+    height: 600vh;
+    width: 600vw;
+    opacity:0.2;
+    animation: animateGrain 8s steps(10) infinite;
+    position: absolute;
+    z-index:1;
+    pointer-events: none;
+    background-blend-mode: screen;
+    
+  }
+@keyframes animateGrain{
+    0%, 100% { transform:translate(0, 0) }
+    10%{
+      transform:translate(-5%,-10%)
+    }
+    20%{
+      transform:translate(-15%,-20%)
+    }
+    30%{
+      transform:translate(-5%,-10%)
+    }
+    40%{
+      transform:translate(-15%,-20%)
+    }
+    
+    50%{
+      transform:translate(-5%,-10%)
+    }
+    60%{
+      transform:translate(-15%,-20%)
+    }
+    70%{
+      transform:translate(-5%,-10%)
+    }
+    80%{
+      transform:translate(-15%,-20%)
+    }
+    90%{
+      transform:translate(-5%,-10%)
+    }
+    100%{
+      transform:translate(-15%,-20%)
+    }
+   
+  }
