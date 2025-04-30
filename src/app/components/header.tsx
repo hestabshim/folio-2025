@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "../styles/roulette.module.css";
 const Header = () => {
   return (
