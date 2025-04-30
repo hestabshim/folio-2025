@@ -1,0 +1,16 @@
+.whiteboard {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(56, 34, 65);
+  background-blend-mode: overlay;
+  background-size: 100vw;
+  position: relative;
+  z-index: 0;
+  background-image: url("../images/04.jpg");
+  filter: contrast(500%) brightness(400%);
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}

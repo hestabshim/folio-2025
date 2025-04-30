@@ -1,0 +1,18 @@
+.card {
+  height: fit-content;
+  width: fit-content;
+  max-width: 100vw;
+  max-height: 100vh;
+  margin:  0 0 auto;
+  padding: 30px;
+  position: absolute;
+  z-index: 1;
+  inset:  0px;
+  background-color: transparent;
+}
+.title {
+  font-family: sans-serif;
+}
+.content {
+  font-family: sans-serif;
+}
