@@ -10,8 +10,6 @@
   },
   "dependencies": {
     "@google/model-viewer": "^4.1.0",
-    "@splinetool/react-spline": "^4.0.0",
-    "@splinetool/runtime": "^1.9.82",
     "next": "15.3.0",
     "prop-types": "^15.8.1",
     "react": "^19.0.0",

@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 import "../styles/models.css"
-function Chicken() {
+function Egg() {
   useEffect(() => {
     import("@google/model-viewer").catch(console.error);
   }, []);
   return (
     <div className="container">
       <model-viewer
-        className="chicken"
-        src="/models/Hen.glb"
+        className="egg"
+        src="/models/Egg.glb"
         camera-controls
         touch-action="pan-y"
         interaction-prompt="none"
@@ -19,10 +19,10 @@ function Chicken() {
         auto-rotate-delay={1}
         rotation-per-second="30deg"
         camera-target="auto auto auto"
-        orientation="20deg 20deg 20deg"
+        orientation="10deg 20deg 40deg"
       >
       </model-viewer>
     </div>
   );
 }
-export default Chicken;
+export default Egg;

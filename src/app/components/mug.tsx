@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 import "../styles/models.css"
-function Chicken() {
+function Mug() {
   useEffect(() => {
     import("@google/model-viewer").catch(console.error);
   }, []);
   return (
     <div className="container">
       <model-viewer
-        className="chicken"
-        src="/models/Hen.glb"
+        className="mug"
+        src="/models/Mug.glb"
         camera-controls
         touch-action="pan-y"
         interaction-prompt="none"
@@ -25,4 +25,4 @@ function Chicken() {
     </div>
   );
 }
-export default Chicken;
+export default Mug;
