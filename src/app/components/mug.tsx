@@ -7,6 +7,8 @@ function Mug() {
   return (
     <div className="container">
       <model-viewer
+        loading="lazy"
+        poster="/lazyloading/Mug With Office Tool.webp"
         className="mug"
         src="/models/Mug.glb"
         camera-controls
@@ -17,9 +19,9 @@ function Mug() {
         disable-zoom
         auto-rotate
         auto-rotate-delay={1}
-        rotation-per-second="30deg"
-        camera-target="auto auto auto"
-        orientation="20deg 20deg 20deg"
+        rotation-per-second="-10deg"
+        camera-target="0 20 0"
+        orientation="-20deg 0deg 20deg"
       >
       </model-viewer>
     </div>

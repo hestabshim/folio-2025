@@ -7,6 +7,8 @@ function Chicken() {
   return (
     <div className="container">
       <model-viewer
+      loading="lazy"
+        poster="/lazyloading/Mug With Office Tool.webp"
         className="chicken"
         src="/models/Hen.glb"
         camera-controls

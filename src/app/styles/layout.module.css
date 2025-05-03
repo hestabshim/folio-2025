@@ -1,0 +1,32 @@
+.about {
+  position: relative;
+  width: 25vw;
+  height: 25vh;
+  left: 40%;
+  top: 20%;
+  height: auto;
+  z-index: 1;
+  
+}
+.container {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100vw;
+}
+
+.about:hover {
+  filter: drop-shadow(0 0 15px #ff02c0);
+  transform: rotate(5deg);
+}
+/* .hover {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    z-index: 3;
+    mix-blend-mode: saturation;
+    filter: saturate(0.7);
+    display: none;
+} */

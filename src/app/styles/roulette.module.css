@@ -5,18 +5,20 @@
 }
 .roulette {
   margin-top: 100px;
-  margin-left: 100px;
   inset: 0;
   width: fit-content;
   display: inline-block;
   position: relative;
+  z-index: 2;
 }
-
+.header {
+  z-index: 4;
+}
 .title {
   font-family: "ABCWhyte";
   font-size: 90px;
   color: rgb(0, 132, 255);
-  mix-blend-mode: hard-light;
+  /* mix-blend-mode: hard-light; */
   filter: brightness(200%);
   position: fixed;
   z-index: 1;
@@ -28,7 +30,7 @@
   font-family: "ABCWhyte";
   font-size: 90px;
   color: rgb(255, 242, 2);
-  mix-blend-mode: hard-light;
+  /* mix-blend-mode: hard-light; */
   filter: brightness(200%);
   opacity: 75%;
   transform: translate(0%, 10%);
@@ -39,23 +41,25 @@
 .title2 {
   margin-left: 20px;
   font-family: "ABCWhyte";
-  color: rgb(221, 0, 255);
-  mix-blend-mode: hard-light;
+  color: rgb(255, 135, 253);
+  /* mix-blend-mode: hard-light; */
   font-size: 90px;
   transform: translate(0%, 15%);
   position: fixed;
   z-index: 1;
+  filter: drop-shadow(0 0 10px #ffffff) brightness(100%);
 }
 .typewriter {
-    z-index: 2;
+  filter: drop-shadow(0 0 10px #ffffff);
+
+  z-index: 3;
   background-image: linear-gradient(
     to right,
     rgba(0, 76, 135, 0.1),
     rgba(0, 208, 255, 0.898) 15%,
     rgba(1, 140, 142, 0.3)
-    
   );
-color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   font-size: 30px;
   animation-name: typing;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -67,24 +71,13 @@ color:rgb(255, 255, 255);
   &:hover {
     background-color: rgb(242, 0, 255);
   }
-  
 }
-.typewriterblur {
-    z-index: 1;
-    filter: blur(10px) brightness(1000%);
-    color:rgb(255, 255, 255);
-    font-size: 30px;
-    animation-name: typing;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: 0.1em solid black;
-    white-space: nowrap; /* Keeps the content on a single line */
-    animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
-  }
-  .position {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-  }
+
+.position {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
 /* The typing effect */
 @keyframes typing {
   from {

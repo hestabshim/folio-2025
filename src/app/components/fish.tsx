@@ -7,19 +7,16 @@ function Fish() {
   return (
     <div className="container">
       <model-viewer
+      loading="lazy"
+        poster="/lazyloading/Mug With Office Tool.webp"
         className="fish"
         src="/models/Fish.glb"
         camera-controls
         touch-action="pan-y"
-        interaction-prompt="none"
         scale="1 1 1"
         disable-tap
         disable-zoom
-        auto-rotate
-        auto-rotate-delay={1}
-        rotation-per-second="30deg"
-        camera-target="auto auto auto"
-        orientation="20deg 20deg 20deg"
+        orientation="0deg 0deg 270deg"
       >
       </model-viewer>
     </div>

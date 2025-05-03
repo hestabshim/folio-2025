@@ -8,6 +8,7 @@ import Fish from "../components/fish";
 import Egg from "../components/egg";
 import Mug from "../components/mug";
 import Cone from "../components/cone";
+import Layout from "../components/layout";
 import "../styles/whiteboard.css";
 import "../styles/models.css";
 export function Home() {
@@ -17,6 +18,7 @@ export function Home() {
       <Card>
         <Roulette />
       </Card>
+      <Layout />
       <div className="layout">
       <Chicken />
       <Cone />
